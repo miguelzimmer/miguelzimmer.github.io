@@ -25,3 +25,25 @@
 .navbar .navbar__content .navbar__links a:hover {
     color: var(--tertiary-color);
 }
+
+
+.navbar .navbar__content .navbar__mobile,
+.navbar .navbar__content .navbar__mobile .mobile-links {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar__content .navbar__links  {
+        display: none;
+    }
+    .navbar .navbar__content .navbar__mobile,
+    .navbar .navbar__content .navbar__mobile .mobile-links {
+    display: flex;
+    align-items: center;
+    }
+
+    .navbar .navbar__content .navbar__mobile img {
+        display: none;
+    }
+
+}
